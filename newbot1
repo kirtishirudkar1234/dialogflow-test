@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dialogflow CX Chatbot Test</title>
+
+  <!-- Dialogflow Messenger Styles -->
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      padding: 40px;
+      text-align: center;
+    }
+    h1 {
+      color: #2b3a67;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 25px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    /* Dialogflow Messenger custom styles */
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      --df-messenger-font-color: #000;
+      --df-messenger-font-family: 'Google Sans';
+      --df-messenger-chat-background: #f3f6fc;
+      --df-messenger-message-user-background: #d3e3fd;
+      --df-messenger-message-bot-background: #fff;
+      bottom: 16px;
+      right: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Dialogflow CX Chatbot Test</h1>
+    <p>
+      This page includes the Dialogflow CX messenger widget.
+      The chatbot bubble should appear at the bottom-right corner.
+    </p>
+  </div>
+
+  <!-- Dialogflow Messenger Script -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+
+  <!-- Dialogflow Messenger Widget -->
+  <df-messenger
+    location="us-central1"
+    project-id="project-6723c9bd-d598-4b7f-9ee"
+    agent-id="aeaf273c-f3f5-44cc-b1cf-c2d27a89b311"
+    language-code="en"
+    max-query-length="-1">
+    <df-messenger-chat-bubble chat-title="a1"></df-messenger-chat-bubble>
+  </df-messenger>
+
+</body>
+</html>
